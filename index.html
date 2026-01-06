@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JPL Season 8 Registration</title>
+
+<style>
+body{
+  margin:0;
+  font-family:'Noto Sans Bengali','Segoe UI',sans-serif;
+  background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+}
+.container{
+  max-width:680px;
+  margin:30px auto;
+  background:#fff;
+  border-radius:16px;
+  overflow:hidden;
+  box-shadow:0 20px 40px rgba(0,0,0,.25);
+}
+.header{
+  background:radial-gradient(circle at top,#f1c40f,#e67e22,#d35400);
+  color:#fff;
+  text-align:center;
+  padding:30px 20px;
+}
+.header h1{
+  margin:0;
+  font-size:2rem;
+  font-weight:800;
+}
+.header p{
+  margin-top:10px;
+  font-size:1.1rem;
+}
+.content{
+  padding:30px 25px;
+}
+.form-group{
+  margin-bottom:20px;
+}
+label{
+  display:block;
+  font-weight:700;
+  margin-bottom:8px;
+  color:#2c3e50;
+}
+input,select{
+  width:100%;
+  padding:14px;
+  border-radius:10px;
+  border:1px solid #ccc;
+  font-size:1rem;
+}
+input:focus,select:focus{
+  outline:none;
+  border-color:#e67e22;
+  box-shadow:0 0 0 3px rgba(230,126,34,.25);
+}
+.submit-btn{
+  margin-top:25px;
+  width:100%;
+  padding:16px;
+  font-size:1.25rem;
+  font-weight:800;
+  color:#fff;
+  background:linear-gradient(135deg,#c0392b,#e74c3c);
+  border:none;
+  border-radius:12px;
+  cursor:pointer;
+}
+.submit-btn:hover{
+  background:linear-gradient(135deg,#a93226,#cb4335);
+}
+.footer{
+  text-align:center;
+  padding:18px;
+  background:#f4f6f7;
+  font-size:.95rem;
+}
+.note{
+  font-size:.9rem;
+  color:#555;
+  margin-top:10px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+  <div class="header">
+    <h1>জগদীশপুর প্রিমিয়ার লীগ</h1>
+    <p>🏏 JPL Season 8 – ২০২৬<br>খেলোয়াড় রেজিস্ট্রেশন</p>
+  </div>
+
+  <div class="content">
+    <form action="PASTE_WEB_APP_URL_HERE" method="post" target="_blank"
+          onsubmit="return confirm('আপনি কি নিশ্চিতভাবে JPL Season 8 এ রেজিস্ট্রেশন করতে চান?');">
+
+      <div class="form-group">
+        <label>নাম (বাংলা)</label>
+        <input type="text" name="name_bn" required>
+      </div>
+
+      <div class="form-group">
+        <label>Name (English)</label>
+        <input type="text" name="name_en" required>
+      </div>
+
+      <div class="form-group">
+        <label>মোবাইল নম্বর</label>
+        <input type="tel" name="phone" pattern="01[3-9][0-9]{8}" required>
+      </div>
+
+      <div class="form-group">
+        <label>ঠিকানা</label>
+        <input type="text" name="address">
+      </div>
+
+      <div class="form-group">
+        <label>SSC পাশের সাল</label>
+        <input type="number" name="ssc_year" min="2000" max="2030" required>
+      </div>
+
+      <!-- ✅ Category Added -->
+      <div class="form-group">
+        <label>ক্যাটাগরি</label>
+        <select name="category" required>
+          <option value="">নির্বাচন করুন</option>
+          <option value="A">A ক্যাটাগরি</option>
+          <option value="B">B ক্যাটাগরি</option>
+          <option value="C">C ক্যাটাগরি</option>
+          <option value="D">D ক্যাটাগরি</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>রক্তের গ্রুপ</label>
+        <select name="blood_group" required>
+          <option value="">নির্বাচন করুন</option>
+          <option>O+</option><option>O-</option>
+          <option>A+</option><option>A-</option>
+          <option>B+</option><option>B-</option>
+          <option>AB+</option><option>AB-</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>খেলোয়াড়ের ধরন</label>
+        <select name="player_type" required>
+          <option>ব্যাটসম্যান</option>
+          <option>বোলার</option>
+          <option>অলরাউন্ডার</option>
+          <option>উইকেটকিপার</option>
+        </select>
+      </div>
+
+      <button class="submit-btn">🏆 JPL Season 8 রেজিস্ট্রেশন জমা দিন</button>
+
+    </form>
+
+    <div class="note">
+      ⚠️ এটি একটি লোকাল ক্রিকেট টুর্নামেন্ট। নির্বাচিত খেলোয়াড়দের ফোনে জানানো হবে।
+    </div>
+  </div>
+
+  <div class="footer">
+    📞 যোগাযোগ: ০১৭৪৩২৬২৪১১
+  </div>
+</div>
+
+</body>
+</html>
